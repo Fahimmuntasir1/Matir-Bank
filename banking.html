@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center my-5 text-5xl font-medium">
+            Your
+            <span class="font-bold text-blue-600">Wallet</span>
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-4/5 mx-auto ">
+                <div class="bg-emerald-400 text-white p-8 rounded">
+                    <h2 class="text-5xl font-normal">Deposit</h2>
+                    <h4  class="text-5xl font-bold"> <span id="deposit-total">00</span>.00$</h4>
+                </div>
+                <div class="bg-yellow-400 text-white p-8 rounded">
+                    <h2 class="text-5xl font-normal">Withdraw</h2>
+                    <h4 class="text-5xl font-bold">00.00$</h4>
+                </div>
+                <div class="bg-blue-500 text-white p-8 rounded">
+                    <h2 class="text-5xl font-normal">Balance</h2>
+                    <h4 class="text-5xl font-bold">1200.00$</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Withdraw and Deposit -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 mt-6 w-4/5 mx-auto">
+                <div>
+                    <div class="mt-4 text-3xl">
+                        <label class="block font-semibold ">Deposit</label>
+                        <input id="add-deposit" type="deposit" placeholder="00.00$"
+                        class=" px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-emerald-600">
+                    </div>
+                    <div class="flex items-baseline justify-between">
+                        <button id="deposit-button" class="p-6 py-2 mt-4 text-white bg-emerald-500 rounded-lg hover:bg-emerald-700">Deposit Now</button>
+                    </div>
+                </div>
+               <div>
+                    <div class="mt-4 text-3xl">
+                        <label class="block font-semibold ">Get Withdraw</label>
+                        <input id="get withdraw" type="deposit" placeholder="00.00$"
+                        class=" px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-600">
+                    </div>
+                    <div class="flex items-baseline justify-between">
+                        <button id="deposit-button" class="p-6 py-2 mt-4 text-white bg-yellow-500 rounded-lg hover:bg-yellow-700">Withdraw Now</button>
+                    </div>
+               </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/banking.js"></script>
+</body>
+</html>

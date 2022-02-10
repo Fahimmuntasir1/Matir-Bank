@@ -8,9 +8,7 @@ const submit = document
     }
     if (emailField == "mail@gmail.com" && passwordField == "password") {
       window.location.href = "Banking.html";
-    } // else {
-    //   console.log(alert("Email or Password is Incorrect"));
-    // }
+    } 
   });
-
+  
 
